@@ -1,3 +1,17 @@
+import React from 'react'; 
+import './App.css';
+import LineChart from './Chart.js';
+function App(){
+  return(
+    <LineChart />
+  )
+}
+export default App;
+
+
+{/*
+// Automatic display of columns
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -51,7 +65,9 @@ function App() {
 export default App;
 
 
-{/* import React, { useState, useEffect } from 'react';
+// Manual display of cols
+
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
