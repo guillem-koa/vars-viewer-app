@@ -28,7 +28,7 @@ export default function LineChart() {
   useEffect(() => {
     // Replace 'API_URL' with the actual API endpoint
     async function fetchData() {
-      const response = await fetch('http://37.187.176.243:8001/get_machine_variables?topic=estat');
+      const response = await fetch('http://37.187.176.243:8001/get_machine_variables?topic=estat&range=30&id_maquina=3');
       const resData = await response.json();
       const resChartData = {
         labels: resData.map((item,index) => index),
